@@ -43,7 +43,7 @@ int height(Node *root){
 }
 int leaf(Node * root ,int &count){
     if(root==nullptr)
-    return 1 ;
+    return 0 ;
     leaf(root->left,count);
     leaf(root->right,count);
     if(root->left==nullptr && root->right==nullptr){
